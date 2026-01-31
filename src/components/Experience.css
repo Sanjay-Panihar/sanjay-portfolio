@@ -1,0 +1,144 @@
+.experience-list {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    max-width: 900px;
+    margin: 0 auto;
+    position: relative;
+}
+
+/* Timeline vertical line */
+.experience-list::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 20px;
+    width: 2px;
+    background: linear-gradient(180deg, var(--primary), transparent);
+}
+
+.experience-item {
+    position: relative;
+    padding-left: 60px;
+}
+
+/* Timeline dot */
+.experience-item::before {
+    content: '';
+    position: absolute;
+    left: 11px;
+    top: 24px;
+    width: 20px;
+    height: 20px;
+    background: var(--bg-card);
+    border: 3px solid var(--primary);
+    border-radius: 50%;
+    z-index: 1;
+    transition: var(--transition);
+}
+
+.experience-item:hover::before {
+    background: var(--primary);
+    box-shadow: 0 0 15px var(--primary-glow);
+}
+
+.experience-item.card {
+    border: 1px solid var(--border);
+    background: rgba(255, 255, 255, 0.03);
+    /* Lighter glass effect */
+    backdrop-filter: blur(10px);
+    padding: 2.5rem;
+    transition: all 0.4s ease;
+}
+
+.experience-item.card:hover {
+    transform: translateX(10px);
+    border-color: var(--primary);
+    background: linear-gradient(145deg, rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0.01));
+}
+
+.exp-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 1.5rem;
+    flex-wrap: wrap;
+    gap: 1rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    padding-bottom: 1rem;
+}
+
+.exp-role {
+    font-size: 1.5rem;
+    color: #fff;
+    margin-bottom: 0.25rem;
+}
+
+.exp-company {
+    font-size: 1.1rem;
+    color: var(--accent);
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.exp-meta {
+    text-align: right;
+    font-size: 0.95rem;
+    color: var(--text-secondary);
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+}
+
+.exp-date {
+    color: var(--primary);
+    font-weight: 500;
+}
+
+.exp-details {
+    padding-left: 1rem;
+    list-style: none;
+    /* Remove default bullets */
+}
+
+.exp-details li {
+    color: var(--text-secondary);
+    margin-bottom: 0.75rem;
+    position: relative;
+    padding-left: 1.5rem;
+    line-height: 1.7;
+}
+
+/* Custom bullet points */
+.exp-details li::before {
+    content: '▹';
+    position: absolute;
+    left: 0;
+    color: var(--primary);
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+}
+
+@media (max-width: 600px) {
+    .experience-list::before {
+        left: 10px;
+    }
+
+    .experience-item {
+        padding-left: 40px;
+    }
+
+    .experience-item::before {
+        left: 2px;
+    }
+
+    .exp-header {
+        flex-direction: column;
+    }
+
+    .exp-meta {
+        text-align: left;
+    }
+}
