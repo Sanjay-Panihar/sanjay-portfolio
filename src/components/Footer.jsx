@@ -31,7 +31,6 @@ const Footer = () => {
                 </div>
                 <div>
                     <p>© {new Date().getFullYear()} Sanjay Panihar. All rights reserved.</p>
-                    <p style={{ fontSize: '0.9rem', marginTop: '0.5rem' }}>Built with React & Vite</p>
                 </div>
             </div>
         </footer>
