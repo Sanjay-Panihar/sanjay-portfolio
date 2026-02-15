@@ -62,6 +62,28 @@ export const cvData = {
   },
   projects: [
     {
+      title: "Freight IT",
+      description: "A real-time logistics platform connecting transporters and shippers across India.",
+      techStack: ["Laravel", "React", "MySQL", "Google Maps API"],
+      link: "https://freightit.in/",
+      details: [
+        "Facilitates real-time bidding, load posting, and lorry searching.",
+        "Connects verified transporters and shippers for optimized freight movement.",
+        "Integrates map services for location tracking and route optimization."
+      ]
+    },
+    {
+      title: "FreightIt Admin",
+      description: "Comprehensive administrative dashboard for the Freight IT logistics platform.",
+      techStack: ["Laravel", "React", "MySQL"],
+      link: "https://admin.freightit.in/",
+      details: [
+        "Manages user verifications, load postings, and platform activities.",
+        "Includes granular user permissions and automated notification systems.",
+        "Provides analytics and reporting for platform performance."
+      ]
+    },
+    {
       title: "Apna Mechanic",
       description: "A scalable, asset-light mobile REST API for an on-demand two-wheeler service and repair platform.",
       techStack: ["Node.js", "TypeScript", "MySQL", "Sequelize"],
