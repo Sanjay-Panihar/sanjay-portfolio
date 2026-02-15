@@ -7,8 +7,11 @@ export const cvData = {
     location: "#280, Sohna Distt. Gurgaon (HARYANA)",
     objective: "Dedicated Software Developer with a passion for crafting efficient and scalable web applications. Seeking to leverage my expertise in Laravel framework and Node js to contribute to innovative projects, collaborate with cross-functional teams, and drive impactful results. Committed to staying updated with emerging technologies and continuously enhancing my skills to deliver high-quality solutions that meet client objectives.",
     socials: {
-      github: "https://github.com/", // Placeholder
-      linkedin: "https://linkedin.com/", // Placeholder
+      github: "https://github.com/",
+      linkedin: "https://www.linkedin.com/in/sanjay-panihar-a3121148/",
+      instagram: "https://www.instagram.com/sanjaypanihar/?hl=en",
+      facebook: "https://www.facebook.com/sanjay.panihar",
+      youtube: "https://www.youtube.com/user/sanjaypanihar"
     }
   },
   experience: [

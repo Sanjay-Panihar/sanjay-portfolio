@@ -1,5 +1,6 @@
 import React from 'react';
 import { cvData } from '../data';
+import { FaLinkedin, FaGithub, FaInstagram, FaFacebook, FaYoutube } from 'react-icons/fa';
 import './Contact.css';
 
 const Contact = () => {
@@ -65,6 +66,24 @@ const Contact = () => {
                         <div className="info-item">
                             <span className="info-label">Location:</span>
                             <span className="info-value">{cvData.personalInfo.location}</span>
+                        </div>
+
+                        <div className="social-links-contact" style={{ marginTop: '2rem', display: 'flex', gap: '1rem' }}>
+                            <a href="https://www.linkedin.com/in/sanjay-panihar" target="_blank" rel="noopener noreferrer" style={{ color: 'var(--text-secondary)', fontSize: '1.5rem', transition: 'color 0.3s' }}>
+                                <FaLinkedin />
+                            </a>
+                            <a href="https://github.com/" target="_blank" rel="noopener noreferrer" style={{ color: 'var(--text-secondary)', fontSize: '1.5rem', transition: 'color 0.3s' }}>
+                                <FaGithub />
+                            </a>
+                            <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" style={{ color: 'var(--text-secondary)', fontSize: '1.5rem', transition: 'color 0.3s' }}>
+                                <FaInstagram />
+                            </a>
+                            <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer" style={{ color: 'var(--text-secondary)', fontSize: '1.5rem', transition: 'color 0.3s' }}>
+                                <FaFacebook />
+                            </a>
+                            <a href="https://www.youtube.com/@SanjayPanihar" target="_blank" rel="noopener noreferrer" style={{ color: 'var(--text-secondary)', fontSize: '1.5rem', transition: 'color 0.3s' }}>
+                                <FaYoutube />
+                            </a>
                         </div>
                     </div>
 

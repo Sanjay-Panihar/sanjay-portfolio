@@ -102,3 +102,44 @@
         transform: rotate(-45deg) translate(5px, -6px);
     }
 }
+
+.nav-socials-desktop {
+    display: flex;
+    gap: 1rem;
+    margin-left: 2rem;
+}
+
+.nav-socials-desktop a {
+    color: var(--text-secondary);
+    font-size: 1.2rem;
+    transition: color 0.3s;
+}
+
+.nav-socials-desktop a:hover {
+    color: var(--primary);
+}
+
+.nav-socials-mobile {
+    display: flex;
+    gap: 1.5rem;
+    margin-top: 1.5rem;
+    width: 100%;
+    justify-content: center;
+}
+
+.nav-socials-mobile a {
+    color: var(--text-secondary);
+    font-size: 1.5rem;
+}
+
+@media (min-width: 769px) {
+    .nav-socials-mobile {
+        display: none;
+    }
+}
+
+@media (max-width: 768px) {
+    .nav-socials-desktop {
+        display: none;
+    }
+}

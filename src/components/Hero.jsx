@@ -27,7 +27,13 @@ const Hero = () => {
                 </div>
                 <div className="hero-image-content animate-fade-in" style={{ animationDelay: '0.5s' }}>
                     <div className="image-wrapper">
-                        <img src={profileImg} alt={name} className="profile-img" />
+                        <img
+                            src={profileImg}
+                            alt={`${name} - Web Developer & Designer`}
+                            className="profile-img"
+                            width="400"
+                            height="400"
+                        />
                     </div>
                 </div>
             </div>
